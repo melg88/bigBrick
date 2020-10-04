@@ -25,7 +25,7 @@ function conversorNumeroEmMensagem(mensagem) {
         mensagemPronta.push(teclas[tecla][quantidadeLetras-1]) 
     
 });
-console.log(mensagemPronta.join(''))
+return mensagemPronta.join('');
 }
 
 let mensagem = "2 222 222 33 66 8 88 777 33";
@@ -33,5 +33,3 @@ let mensagem = "2 222 222 33 66 8 88 777 33";
 teste = conversorNumeroEmMensagem(mensagem);
 
 console.log(teste)
-
-
