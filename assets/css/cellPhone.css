@@ -34,14 +34,15 @@
   flex-direction: column;
   width: 220px;
   height: 130px;
+  margin: 10px 0;
   background: rgb(97, 115, 89);
   border-radius: 10% 10% 10% 10%;
 }
 
-input[type="text"]{
+input[type="text"] {
   background: transparent;
   border: none;
-
+  color: black;
 }
 
 .points1 {
@@ -80,12 +81,18 @@ input[type="text"]{
 }
 
 .logo-name {
-  margin-top: 10px;
+  margin-top: 20px;
   color: white;
   font-size: 16px;
 }
 
-.convert-button, .green-button {
+.message{
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.convert-button,
+.green-button {
   margin: 2px;
   display: flex;
   justify-content: center;
@@ -98,15 +105,17 @@ input[type="text"]{
   cursor: pointer;
   color: green;
 }
-.convert-button:active{
-  transform: scale(0.9,0.9);
+.convert-button:active {
+  transform: scale(0.9, 0.9);
 }
-
-.green-button::before{
+.green-button:active {
+  transform: scale(0.9, 0.9);
+}
+.green-button::before {
   content: "";
   width: 70%;
-height: 5px;
-background: green;
+  height: 5px;
+  background: green;
 }
 .buttons {
   padding: 10px 0px 10px 8px;
@@ -132,11 +141,9 @@ background: green;
   cursor: pointer;
 }
 
-.button:active{
-  transform: scale(0.9,0.9);
+.button:active {
+  transform: scale(0.9, 0.9);
 }
-
-
 
 .alphabet {
   padding-left: 2px;
