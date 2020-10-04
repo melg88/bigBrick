@@ -95,14 +95,9 @@ input[type="text"]{
   border-radius: 5% 5% 70% 70%;
   border: 2px solid grey;
   cursor: pointer;
+  color: green;
 }
-.green-button::before {
-  content: "";
-  width: 60%;
-  height: 5px;
-  background-color: rgb(17, 253, 17);
-  border-radius: 15px;
-}
+
 
 .buttons {
   padding: 10px 0px 10px 8px;
