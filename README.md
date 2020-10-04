@@ -4,4 +4,6 @@ Big-brick foi um desafio proposto pela accenture, onde precisariamos recriar o a
 
 
 
+# Preview
+
 ![preview do projeto ](https://i.imgur.com/ZRfkm51.png)
