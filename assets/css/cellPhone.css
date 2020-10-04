@@ -1,0 +1,92 @@
+.cell-body {
+  display: flex;
+  justify-content: center;
+
+  
+  width: 200px;
+  height: 420px;
+  background: #3f3f57;
+  left: 35%;
+  top: 20%;
+  border-radius: 23% 23% 25% 25%;
+}
+
+.phone-silver {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 175px;
+  height: 200px;
+  background: #3f3f57;
+  border-bottom: 35px solid rgb(190, 190, 188);
+  border-left: 5px solid rgb(190, 190, 188);
+  border-right: 5px solid rgb(190, 190, 188);
+  border-top: 7px solid rgb(190, 190, 188);
+  border-radius: 25% 25% 40% 40%;
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 150px;
+  height: 90px;
+  background: rgb(97, 115, 89);
+  border-radius: 10% 10% 10% 10%;
+}
+
+.points1 {
+  margin-top: 5px;
+  position: relative;
+  width: 7px;
+  height: 7px;
+  background: black;
+  border-radius: 100%;
+}
+.points1::before {
+  position: absolute;
+  top: 10px;
+  content: "";
+
+  width: 7px;
+  height: 7px;
+  background: black;
+  border-radius: 100%;
+}
+
+.points2 {
+  margin-top: 13px;
+  position: relative;
+  width: 7px;
+  height: 7px;
+  background: black;
+  border-radius: 100%;
+}
+.points2::before {
+  position: absolute;
+  top: 10px;
+  content: "";
+
+  width: 7px;
+  height: 7px;
+  background: black;
+  border-radius: 100%;
+}
+
+.logo-name {
+  margin-top: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+.green-button {
+  width: 120px;
+  height: 25px;
+  background: rgb(190, 190, 188);
+  border-radius: 5% 5% 70% 70%;
+  border: 2px solid grey;
+}
+
