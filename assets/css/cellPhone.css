@@ -3,27 +3,27 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 200px;
-  height: 440px;
-  background: #3f3f57;
+  width: 275px;
+  height: 530px;
+  background: var(--blue-color);
   left: 35%;
   top: 20%;
   border-radius: 23% 23% 25% 25%;
+  border: 3px solid black;
 }
-
 .phone-silver {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   margin-top: 10px;
-  width: 165px;
-  height: 200px;
+  width: 245px;
+  height: 280px;
   background: #3f3f57;
-  border-bottom: 35px solid rgb(190, 190, 188);
-  border-left: 5px solid rgb(190, 190, 188);
-  border-right: 5px solid rgb(190, 190, 188);
-  border-top: 7px solid rgb(190, 190, 188);
+  border-bottom: 35px solid var(--silver-color);
+  border-left: 5px solid var(--silver-color);
+  border-right: 5px solid var(--silver-color);
+  border-top: 7px solid var(--silver-color);
   border-radius: 25% 25% 40% 40%;
 }
 
@@ -32,10 +32,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 150px;
-  height: 90px;
+  width: 220px;
+  height: 160px;
   background: rgb(97, 115, 89);
   border-radius: 10% 10% 10% 10%;
+}
+
+input[type="text"]{
+  background: transparent;
+  border: none;
+
 }
 
 .points1 {
@@ -43,7 +49,7 @@
   position: relative;
   width: 7px;
   height: 7px;
-  background: black;
+  background: var(--grey-color);
   border-radius: 100%;
 }
 .points1::before {
@@ -52,16 +58,15 @@
   content: "";
   width: 7px;
   height: 7px;
-  background: black;
+  background: var(--grey-color);
   border-radius: 100%;
 }
-
 .points2 {
   margin-top: 13px;
   position: relative;
   width: 7px;
   height: 7px;
-  background: black;
+  background: var(--grey-color);
   border-radius: 100%;
 }
 .points2::before {
@@ -70,7 +75,7 @@
   content: "";
   width: 7px;
   height: 7px;
-  background: black;
+  background: var(--grey-color);
   border-radius: 100%;
 }
 
@@ -81,16 +86,27 @@
 }
 
 .green-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 120px;
   height: 25px;
-  background: rgb(190, 190, 188);
+  background: var(--silver-color);
   border-radius: 5% 5% 70% 70%;
   border: 2px solid grey;
+  cursor: pointer;
+}
+.green-button::before {
+  content: "";
+  width: 60%;
+  height: 5px;
+  background-color: rgb(17, 253, 17);
+  border-radius: 15px;
 }
 
 .buttons {
   padding: 10px 0px 10px 8px;
-  width: 80%;
+  width: 83%;
   height: 160px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -100,14 +116,27 @@
     "button1 button2 button3" "button4 button5 button6"
     "button7 button8 button9" "button10 button11 button12";
 }
+
 .button {
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
- 
-  width: 80%;
+  width: 86%;
   border-radius: 20px 40px 20px 40px;
   background-color: rgb(190, 190, 188);
+  cursor: pointer;
+}
+
+.button:active{
+  transform: scale(0.9,0.9);
+}
+
+
+
+.alphabet {
+  padding-left: 2px;
+  font-size: 11px;
 }
 .button1 {
   grid-area: button1;

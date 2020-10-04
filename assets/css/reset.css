@@ -1,4 +1,10 @@
 @import url("./cellPhone.css");
+
+:root{
+    --silver-color:#bebebc;
+    --blue-color:#3f3f57;
+    --grey-color : rgb(26, 26, 26);
+}
 *{
     margin: 0;
     padding: 0;
