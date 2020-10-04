@@ -41,7 +41,7 @@ if(tipo == 1){
                     for(i = qtdeRepete;i>=0;i--){
                         strNew += (index+1).toString()
                     }
-                    strNew += " "
+                    if(teclas.length-1 > index) strNew += " "
                     return;
                 }
 
