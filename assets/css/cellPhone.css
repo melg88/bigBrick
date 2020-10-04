@@ -1,10 +1,10 @@
 .cell-body {
   display: flex;
+  align-items: center;
   justify-content: center;
-
-  
+  flex-direction: column;
   width: 200px;
-  height: 420px;
+  height: 440px;
   background: #3f3f57;
   left: 35%;
   top: 20%;
@@ -17,7 +17,7 @@
   align-items: center;
   flex-direction: column;
   margin-top: 10px;
-  width: 175px;
+  width: 165px;
   height: 200px;
   background: #3f3f57;
   border-bottom: 35px solid rgb(190, 190, 188);
@@ -50,7 +50,6 @@
   position: absolute;
   top: 10px;
   content: "";
-
   width: 7px;
   height: 7px;
   background: black;
@@ -69,7 +68,6 @@
   position: absolute;
   top: 10px;
   content: "";
-
   width: 7px;
   height: 7px;
   background: black;
@@ -90,3 +88,60 @@
   border: 2px solid grey;
 }
 
+.buttons {
+  padding: 10px 0px 10px 8px;
+  width: 80%;
+  height: 160px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  grid-template-areas:
+    "button1 button2 button3" "button4 button5 button6"
+    "button7 button8 button9" "button10 button11 button12";
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  width: 80%;
+  border-radius: 20px 40px 20px 40px;
+  background-color: rgb(190, 190, 188);
+}
+.button1 {
+  grid-area: button1;
+}
+.button2 {
+  grid-area: button2;
+}
+.button3 {
+  grid-area: button3;
+}
+.button4 {
+  grid-area: button4;
+}
+.button5 {
+  grid-area: button5;
+}
+.button6 {
+  grid-area: button6;
+}
+.button7 {
+  grid-area: button7;
+}
+.button8 {
+  grid-area: button8;
+}
+.button9 {
+  grid-area: button9;
+}
+.button10 {
+  grid-area: button10;
+}
+.button11 {
+  grid-area: button11;
+}
+.button12 {
+  grid-area: button12;
+}
