@@ -20,54 +20,60 @@
         </div>
         <h2 class="logo-name">BIG-BRICK</h2>
         <div class="screen">
-          <h2 class="game"><input type="Text" placeholder="Ensira um texto"></h2>
+          <h2 class="game"><input type="Text" id="codificado" placeholder="Ensira um texto"></h2>
+          <h4 class="game"><label id="convertido"></label></h4>
         </div>
-        <div class="green-button">123 > abc</div>
-        <div class="button-attend"></div>
+        <input type="hidden" id="tipo" name="tipo" value="1"/>  
+        <div class="convert-button" id="textoTipo" onclick="trocarTipo()">123 > abc</div>
+        <div class="buttons-screen" onclick="converter()">
+          <div class="green-button"></div>
+          <div class="button-attend"></div>
+        </div>
+        <!-- <div class="button-attend"><input type="button" id="converter" value="Enter" onclick="conversor()"></div> -->
 
       </div>
 
       <div class="buttons">
-        <div class="button button1">
+        <div class="button button1" onclick="adicionarBotao('1')">
           <div class="number">1</div>
           <div class="alphabet">ºº</div>
         </div>
-        <div class="button button2">
+        <div class="button button2" onclick="adicionarBotao('2')">
           <div class="number">2</div>
           <div class="alphabet">abc</div>
         </div>
-        <div class="button button3">
+        <div class="button button3" onclick="adicionarBotao('3')">
           <div class="number">3</div>
           <div class="alphabet">def</div>
         </div>
-        <div class="button button4">
+        <div class="button button4" onclick="adicionarBotao('4')">
           <div class="number">4</div>
           <div class="alphabet">ghi</div>
         </div>
 
-        <div class="button button5">
+        <div class="button button5" onclick="adicionarBotao('5')">
           <div class="number">5</div>
           <div class="alphabet">jkl</div>
         </div>
-        <div class="button button6">
+        <div class="button button6" onclick="adicionarBotao('6')">
           <div class="number">6</div>
           <div class="alphabet">mno</div>
         </div>
-        <div class="button button7">
+        <div class="button button7" onclick="adicionarBotao('7')">
           <div class="number">7</div>
           <div class="alphabet">pqrs</div>
         </div>
-        <div class="button button8">
+        <div class="button button8" onclick="adicionarBotao('8')">
           <div class="number">8</div>
           <div class="alphabet">tuv</div>
         </div>
 
-        <div class="button button9">
+        <div class="button button9" onclick="adicionarBotao('9')">
           <div class="number">9</div>
           <div class="alphabet">wxyz</div>
         </div>
-        <div class="button button10">*</div>
-        <div class="button button11">
+        <div class="button button10"  onclick="adicionarBotao(' ')">_</div>
+        <div class="button button11" onclick="adicionarBotao('0')">
           <div class="number">0</div>
           <div class="alphabet">–</div>
         </div>
@@ -76,6 +82,25 @@
     </div>
 
 
+    <script type="text/javascript" src="js/script.js" ></script>
+    <script type="text/javascript">
+      function converter(){
+        document.getElementById("convertido").innerText = conversorBigBrick(document.getElementById("codificado").value, document.getElementById('tipo').value);
+      }
 
+      function trocarTipo(){
+        if(document.getElementById('tipo').value == "1"){
+          document.getElementById("textoTipo").innerText = "abc > 123";
+          document.getElementById('tipo').value = '2';
+        }else{
+          document.getElementById("textoTipo").innerText = "123 > abc";
+          document.getElementById('tipo').value = '1';
+        }
+      }
+
+      function adicionarBotao(numero){
+        document.getElementById("codificado").value += numero
+      }
+    </script>
   </body>
 </html>
