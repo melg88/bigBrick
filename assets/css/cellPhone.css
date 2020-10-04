@@ -33,7 +33,7 @@
   align-items: center;
   flex-direction: column;
   width: 220px;
-  height: 160px;
+  height: 130px;
   background: rgb(97, 115, 89);
   border-radius: 10% 10% 10% 10%;
 }
@@ -85,7 +85,8 @@ input[type="text"]{
   font-size: 16px;
 }
 
-.green-button {
+.convert-button, .green-button {
+  margin: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,8 +98,16 @@ input[type="text"]{
   cursor: pointer;
   color: green;
 }
+.convert-button:active{
+  transform: scale(0.9,0.9);
+}
 
-
+.green-button::before{
+  content: "";
+  width: 70%;
+height: 5px;
+background: green;
+}
 .buttons {
   padding: 10px 0px 10px 8px;
   width: 83%;
